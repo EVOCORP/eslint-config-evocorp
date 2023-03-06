@@ -1,6 +1,6 @@
 {
   "name": "@evocorp/eslint-config",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "ESlint configuration used by EVOCORP",
   "main": "index.js",
   "license": "MIT",
