@@ -10,19 +10,44 @@
 
 ## Setup
 
-1. Install the dependencies
+### React (with Next.js)
 
+Install dependencies:
 ```
 npm i -D eslint @evocorp/eslint-config
 ```
-
-2. Create a `.eslintrc.json` file extending the config:
-
+Inside `.eslintrc.json`
 ```
 {
-  "extends": "@evocorp/eslint-config/react"
-  // "extends": "@evocorp/eslint-config/node"
+  "extends": [
+    "@evocorp/eslint-config/next",
+    "next/core-web-vitals"
+  ]
 }
 ```
 
-> You can also use a `.eslintrc.js` instead of JSON if you prefer.
+### React (without Next.js)
+
+Install dependencies:
+```
+npm i -D eslint @evocorp/eslint-config
+```
+Inside `.eslintrc.json`
+```
+{
+  "extends": "@evocorp/eslint-config/react"
+}
+```
+
+### Node.js
+
+Install dependencies:
+```
+npm i -D eslint @evocorp/eslint-config
+```
+Inside `.eslintrc.json`
+```
+{
+  "extends": "@evocorp/eslint-config/node"
+}
+```

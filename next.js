@@ -5,8 +5,6 @@ module.exports = {
     jest: true,
   },
   extends: [
-    'plugin:react/recommended',
-    'plugin:react-hooks/recommended',
     'standard',
     'plugin:@typescript-eslint/recommended',
     'plugin:prettier/recommended',
@@ -20,10 +18,8 @@ module.exports = {
     sourceType: 'module'
   },
   plugins: [
-    'react',
     'jsx-a11y',
-    '@typescript-eslint',
-    'import-helpers'
+    '@typescript-eslint'
   ],
   rules: {
     'prettier/prettier': ["error", {
@@ -35,8 +31,6 @@ module.exports = {
       'semi': false,
       'endOfLine': 'auto',
     }],
-    'react/react-in-jsx-scope': 'off',
-    'react/prop-types': 'off',
     'jsx-a11y/alt-text': [
       'warn',
       {
@@ -49,19 +43,6 @@ module.exports = {
     'jsx-a11y/aria-unsupported-elements': 'warn',
     'jsx-a11y/role-has-required-aria-props': 'warn',
     'jsx-a11y/role-supports-aria-props': 'warn',
-    "import-helpers/order-imports": [
-      "error",
-      {
-        "newlinesBetween": "always", // * new line between groups
-        "groups": [
-          "/^react/",
-          "module",
-          ["/^@//", "/^~/"],
-          ["parent", "sibling", "index"]
-        ],
-        "alphabetize": { "order": "asc", "ignoreCase": true }
-      }
-    ]
   },
   settings: {
     react: {
